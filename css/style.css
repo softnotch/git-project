@@ -1,0 +1,91 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/**/
+nav{
+	background: #333;
+	padding:20px;
+}
+#nav .container a{
+	color: #fff!important;
+}
+/**/
+.about-section{
+	padding-top: 50px;
+}
+.hvr-right{
+	display: inline-block;
+	vertical-align: middle;
+	transition-duration: 0.5s;
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgb(0,0,0);
+	position: relative;
+	transition-property: color;
+	border: 2px solid #000;
+}
+.hvr-right:before{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #333;
+	transition-timing-function: ease-out;
+	transform:  scaleX(0);
+	transform-origin: 0 50%;
+	transition-property: transform;
+	transition-duration: 0.5s;
+}
+.hvr-right:hover, .hvr-right:focus,
+.hvr-right:active{
+	color: #fff;
+}
+.hvr-right:hover:before, .hvr-right:focus:before,
+.hvr-right:active:before{
+	transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+	transform: scaleX(1);
+}
+
+/**/
+.team .member{
+	margin-bottom: 20px;
+	overflow: hidden;
+	text-align: center;
+	border-radius: 5px;
+	background: #fff;
+	box-shadow: 0px 2px 15px rgba(0,0,0,0.1);
+}
+.team .member .member-img{
+	position: relative;
+	overflow: hidden;
+}
+.team .member .member-info{
+	padding: 25px 15px;
+}
+.team .member .member-info h4{
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-size: 18px;
+	color: #000;
+}
+.team .member .member-info span{
+	display: block;
+	font-size: 14px;
+	font-weight: lighter;
+	color: #000;
+}
+/**/
+footer{
+	background: #333;
+	color: #fff;
+	padding: 10px;
+}
+footer p{
+	font-size: 16px;
+	font-style: italic;
+}
+
